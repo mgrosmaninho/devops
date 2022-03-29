@@ -8,7 +8,7 @@ pipeline {
 	}
 	stage('Docker push') {
 	  steps {
-	    sh 'docker push mgrosmaninho/webserver'
+	    sh 'docker push mgrosmaninho/webserver:latest'
 	  }
 	}
   }
