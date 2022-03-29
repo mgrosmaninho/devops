@@ -3,7 +3,7 @@ pipeline {
   stages {
 	stage('Docker build') {
 	  steps {
-		sh 'docker build -t mgrosmaninho/webserver:0.01 ~/webserver/Dockerfile'
+		sh 'docker build -t mgrosmaninho/webserver:0.01 /home/manuel/webserver/Dockerfile'
 	  }
 	}
 	stage('Docker push') {
